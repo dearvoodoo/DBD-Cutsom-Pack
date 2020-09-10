@@ -293,3 +293,54 @@ hr.hr-4:after {
 }
 
 /* Custom Page CSS */
+figure.imgsBA, figure.imgsDC, figure.imgsFE {
+    position: relative;
+    line-height: 0;
+    cursor: w-resize;
+}
+
+figure.imgsBA img, figure.imgsDC img, figure.imgsFE img {
+    -webkit-touch-callout: none;
+}
+
+figure.imgsBA #before, figure.imgsDC #before, figure.imgsFE #before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+figure.imgsBA #before img, figure.imgsDC #before img, figure.imgsFE #before img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+}
+
+figure.imgsBA #before figcaption, figure.imgsDC #before figcaption, figure.imgsFE #before figcaption {
+    left: 1em;
+}
+
+figure.imgsBA #after img, figure.imgsDC #after img, figure.imgsFE #after img {
+    width: 100%;
+}
+
+figure.imgsBA #after figcaption, figure.imgsDC #after figcaption, figure.imgsFE #after figcaption {
+    right: 1em;
+}
+
+figure.imgsBA figcaption, figure.imgsDC figcaption, figure.imgsFE figcaption {
+    position: absolute;
+    top: 1em;
+    color: white;
+    white-space: nowrap;
+    z-index: 1;
+    text-shadow: 1px 0 3px #000;
+}
+
+.wrapper {
+    max-width: 55rem;
+    margin: 2rem auto;
+  }
